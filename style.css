@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sniglet", system-ui;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(27, 186, 186);
+}
+.card{
+    padding: 30px;
+    width: 600px;
+    background: white;
+    border-radius: 15px;   
+}
+.card h2{
+    font-size: 38px;
+    color: rgba(36, 36, 36, 0.892);
+    text-align: center;
+    margin-bottom: 30px;
+    word-spacing: 1px;
+}
+.card .content{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.card .content .quote{
+    font-size: 24px;
+    display: inline;
+    color: rgba(49, 49, 49, 0.893);
+    margin: 0px 10px;
+    width: 100%;
+    /* word-break: break-all; */
+}
+.card .content .name{
+    text-align: right;
+    margin: 10px 0px;
+}
+.card .content .name .qname{
+    font-weight: 400;
+    font-size: 20px;
+}
+.card hr{
+    margin-bottom:20px ;
+}
+.card .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.card .buttons .sbtns{
+    display: flex;
+}
+.card .buttons li{
+    list-style: none;
+    border: 1px solid  rgb(44, 123, 123);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.card .buttons li:hover{
+    color: white;
+    background: rgb(44, 123, 123);
+}
+.card .buttons li i:hover{
+    color: white;
+}
+.card .buttons li:nth-child(2){
+    margin-left: 10px;
+}
+.card .buttons li:nth-child(3){
+    margin-left: 10px;
+}
+.card .buttons li i{
+    color:   rgb(44, 123, 123);
+    transition: all 0.4s ease;
+}
+.card button{
+    background:   rgb(44, 123, 123);
+    color: white;
+    font-size: 18px;
+    /* width: 130px; */
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+button.active{
+    opacity: 0.5;
+    pointer-events: none;
+}
